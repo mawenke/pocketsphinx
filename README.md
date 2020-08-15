@@ -19,6 +19,7 @@ dpkg -i gstreamer0.10-pocketsphinx_0.8-5_amd64.deb
 ## 编译
 
 cd {工作空间}
+
 catkin_make
 
 ## 运行
@@ -26,9 +27,9 @@ catkin_make
 roslaunch pocketsphinx tiago_voice_navigation.launch
 
 ### 相关参考:
-www.cnblogs.com/TooyLee/p/7739783.html
-blog.csdn.net/ppp2006/article/details/22151825
-blog.csdn.net/qiaocuiyu/article/details/52093509
+* www.cnblogs.com/TooyLee/p/7739783.html
+* blog.csdn.net/ppp2006/article/details/22151825
+* blog.csdn.net/qiaocuiyu/article/details/52093509
 
 hmm表示隐马尔可夫声学模型，lm表示language model语言模型
 
