@@ -43,7 +43,7 @@ class recognizer(object):
         self._device_name_param = "~mic_name"  # Find the name of your microphone by typing pacmd list-sources in the terminal
         self._lm_param = "~lm"
         self._dic_param = "~dict"
-	self._hmm_param = "~hmm"
+        self._hmm_param = "~hmm"
 
         # Configure mics with gstreamer launch config
         if rospy.has_param(self._device_name_param):
@@ -107,11 +107,7 @@ class recognizer(object):
 
         self.asr.set_property('lm', lm)
         self.asr.set_property('dict', dic)
-	self.asr.set_property('hmm', hmm)
-
-#	self.asr.set_property('lm', '/usr/share/pocketsphinx/model/lm/en/tidigits.DMP')
-#	self.asr.set_property('dict', '/usr/share/pocketsphinx/model/lm/en/tidigits.dic')
-#	self.asr.set_property('hmm', '/usr/share/pocketsphinx/model/hmm/en/tidigits')
+        self.asr.set_property('hmm', hmm)
 
         self.bus = self.pipeline.get_bus()
         self.bus.add_signal_watch()
